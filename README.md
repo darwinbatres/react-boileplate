@@ -7,3 +7,4 @@
 1. react
 1. react-dom
 1. eslint
+1. prettier
