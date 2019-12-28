@@ -22,11 +22,14 @@ const useDataApi = initialData => {
       try {
         switch (method.toUpperCase()) {
           case "GET":
-            result = await axios.get(resourceUri, requestData);
-            break;
-
           case "POST":
-            result = await axios.post(resourceUri, requestData);
+          case "PUT":
+          case "PATCH":
+          case "DELETE":
+            result = await axios[method.toLowerCase()](
+              resourceUri,
+              requestData
+            );
             break;
 
           default:
