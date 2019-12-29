@@ -37,7 +37,8 @@ const useDataApi = initialData => {
             break;
         }
 
-        setData(result.data.data);
+        // set response data
+        setData(result);
       } catch (error) {
         setIsError(true);
       }
