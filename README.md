@@ -18,4 +18,4 @@
 
 ## Deployment
 
-1. Before deployment/build, make sure to provide the right path for the backend to be used
+1. Before deployment/build, make sure to provide the right path for the backend to be used as part of the `.env.example` file
